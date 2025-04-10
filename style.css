@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'VAGRounded';
+    src: url('./fonts/VAG Rounded Std Bold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.header_main {
+    background-color: #D6001C;
+    padding: 0;
+    margin: 0;
+    height: 77px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header_main td {
+    height: 77px;
+}
+
+.header_main a {
+    text-align: center;
+    font-size: 20px;
+    color:azure;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.header_order_now {
+    background-color: #FA8003;
+    border-radius: 25px;
+    padding: 10px 12px; 
+    display: inline-block;
+    text-align: center;
+}
+
+.header_main_items_margin_right {
+    width: 150px;
+}
+
+.arrow-icon {
+  width: 15px;
+  height: 15px;
+  fill: white;
+}
+
+.header_line {
+    background-color: #FFA400;
+    padding: 0;
+    margin: 0;
+    height: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.body_main_background {
+    padding: 0;
+    margin: 0;
+    height: 500px;
+}
+
+.main_background_image {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+body, html {
+    font-family: 'VAGRounded', sans-serif;
+    padding: 0;
+    margin: 0;
+}
