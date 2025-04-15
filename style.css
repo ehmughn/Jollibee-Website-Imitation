@@ -1,9 +1,16 @@
 @font-face {
-    font-family: 'VAGRounded';
+    font-family: 'VAGRoundedBold';
     src: url('./fonts/VAG Rounded Std Bold.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
+}
+
+@font-face {
+    font-family: 'VAGRoundedThin';
+    src: url('./fonts/VAG Rounded Std Thin.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .header_main {
     background-color: #D6001C;
@@ -73,7 +80,7 @@
 }
 
 body, html {
-    font-family: 'VAGRounded', sans-serif;
+    font-family: 'VAGRoundedBold', sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -181,6 +188,7 @@ body, html {
 .featured_button {
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 30px;
     font-size: 28px;
     color: white;
 }
@@ -191,4 +199,161 @@ body, html {
     align-items: center;
     height: 100%;
     text-align: center;
+}
+
+.div_what {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin: 20px 0;
+    align-items: center;
+    text-align: center;
+}
+
+.div_what_we_do, .div_what_we_stand_for {
+    position: relative;
+    width: 35%;
+    display: flex; /* Use flexbox to align children */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 20px; /* Add padding inside the items */
+    box-sizing: border-box; /* Include padding and border in width calculations */
+}
+
+.div_what_we_do_image, .div_what_we_stand_for_image {
+    position: relative; /* Enable positioning for the image */
+    width: 200px; /* Match the size of the image */
+    height: 200px; /* Match the size of the image */
+    border-radius: 50%; /* Add rounded corners */
+    display: flex; /* Ensure the image inside is centered */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.div_what_we_do_image::before {
+    content: ''; /* Create the background element */
+    position: absolute; /* Position it relative to the parent div */
+    width: 200px; /* Match the size of the image */
+    height: 200px; /* Match the size of the image */
+    border-radius: 20px; /* Add rounded corners */
+    background-color:  #FFA400; /* Set the background color */
+    z-index: -1; /* Place it behind the image */
+    transform: translate(35px, 20px); /* Offset it by 30px to the bottom right */
+}
+
+.div_what_we_stand_for_image::before {
+    content: ''; /* Create the background element */
+    position: absolute; /* Position it relative to the parent div */
+    width: 200px; /* Match the size of the image */
+    height: 200px; /* Match the size of the image */
+    border-radius: 20px; /* Add rounded corners */
+    background-color:#D6001C; /* Set the background color */
+    z-index: -1; /* Place it behind the image */
+    transform: translate(-35px, 20px); /* Offset it by 30px to the bottom right */
+}
+
+.text_thin {
+    font-family: 'VAGRoundedThin', sans-serif;
+}
+
+.div_what_line {
+    width: 80%; /* Adjust the width of the line */
+    height: 5px; /* Set the thickness of the line */
+    background-color: #000; /* Set the color of the line */
+    margin: 0; /* Center the line and add spacing */
+}
+
+.line {
+    width: 100%; /* Adjust the width of the line */
+    height: 2px; /* Set the thickness of the line */
+    background-color:#FFA400; /* Set the color of the line */
+    margin: 0; /* Center the line and add spacing */
+}
+
+.footer {
+    background-color: #fff;
+    padding: 40px 100px;
+    font-family: 'VAGRoundedBold', sans-serif;
+}
+
+.footer_top {
+    display: flex;
+    justify-content: space-between; /* Push the logo to the left and the button to the right */
+    align-items: center; /* Vertically align the items */
+    margin-bottom: 20px;
+    width: 100%; /* Ensure the container spans the full width of the screen */
+}
+
+.footer_logo {
+    height: 80px; /* Adjust the size of the logo */
+    margin-left: 0; /* Ensure the logo is flush with the left edge */
+}
+
+.order_now_button {
+    background-color: #FA8003;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 0; /* Ensure the button is flush with the right edge */
+}
+
+.footer_app_links {
+    display: flex;
+    flex-direction: column; /* Stack app links vertically */
+    align-items: center; /* Center-align the content */
+}
+
+.footer_app_links a img {
+    height: 40px; /* Adjust the size of the app icons */
+}
+
+.footer_links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer_links h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer_links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer_links ul li {
+    margin-bottom: 5px;
+}
+
+.footer_links ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.footer_links a img {
+    height: 50px; /* Adjust the height of the social media icons */
+    width: 50px; /* Ensure the width matches the height for a square aspect ratio */
+    margin-right: 10px; /* Add spacing between icons */
+}
+
+.footer_bottom {
+    font-family: 'VAGRoundedThin', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    text-align: left;
+    color: #666;
+}
+
+.footer_links_list {
+    font-family: 'VAGRoundedThin', sans-serif;
 }
